@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NomNom Settings</title>
+    <link rel="stylesheet" href="./styles/popup.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="/icon.png" alt="NomNom" />
+      <h1>NomNom</h1>
+    </div>
+
+    <div class="form-group">
+      <label for="tabPoolCount">Tab Pool Count</label>
+      <p class="description">Number of tabs to open at once</p>
+      <input type="number" id="tabPoolCount" min="1" max="20" value="3" />
+    </div>
+
+    <div class="form-group">
+      <label for="nextTabShortcut">Next Tab Shortcut</label>
+      <p class="description">Press keys or click to set shortcut</p>
+      <div class="hotkey-input">
+        <input type="text" id="nextTabShortcut" readonly placeholder="Click to record..." />
+        <span class="hint">Recording</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="limitOpenLinkCount">Limit Open Links</label>
+      <p class="description">Maximum links to open (0 = no limit)</p>
+      <input type="number" id="limitOpenLinkCount" min="0" max="100" value="0" />
+    </div>
+
+    <div class="footer">v0.1.0</div>
+
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
