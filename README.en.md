@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="NomNom" width="128">
+</p>
+
 # NomNom
 
 English | [简体中文](README.md)
@@ -5,6 +9,8 @@ English | [简体中文](README.md)
 A Chrome browser extension that collects and batch-opens links like a hamster. Nom nom nom... all your links.
 
 > **Why "NomNom"?**: NomNom is an onomatopoeia for the sound of eating, often used to describe small animals (especially hamsters) munching away. This extension works like a diligent hamster, helping you "gobble up" links from web pages and stash them in tab groups to digest at your own pace.
+
+![NomNom Demo](preview.gif)
 
 ## Features
 

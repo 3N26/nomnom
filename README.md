@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="NomNom" width="128">
+</p>
+
 # NomNom
 
 [English](README.en.md) | 简体中文
@@ -5,6 +9,8 @@
 一个 Chrome 浏览器扩展，像仓鼠一样收集和批量打开链接。Nom nom nom... all your links.
 
 > **名字由来**：NomNom 源自英语中模拟吃东西的拟声词，常用于形容小动物（尤其是仓鼠）快速咀嚼食物的声音。这个扩展就像一只勤劳的仓鼠，帮你把网页上的链接一个个"吃掉"，囤进标签组里慢慢消化。
+
+![NomNom 演示](preview.gif)
 
 ## 功能特性
 
