@@ -1,0 +1,35 @@
+{
+  "extName": {
+    "message": "NomNom"
+  },
+  "extDescription": {
+    "message": "像仓鼠一样收集和批量打开链接"
+  },
+  "popupTitle": {
+    "message": "NomNom 设置"
+  },
+  "tabPoolCount": {
+    "message": "批量打开数量"
+  },
+  "tabPoolCountDesc": {
+    "message": "每次打开的标签页数量"
+  },
+  "nextTabShortcut": {
+    "message": "下一个链接快捷键"
+  },
+  "nextTabShortcutDesc": {
+    "message": "点击后按下快捷键进行设置"
+  },
+  "hotkeyPlaceholder": {
+    "message": "点击录制..."
+  },
+  "hotkeyRecording": {
+    "message": "录制中"
+  },
+  "limitOpenLinks": {
+    "message": "链接数量限制"
+  },
+  "limitOpenLinksDesc": {
+    "message": "最多收集的链接数（0 = 不限制）"
+  }
+}

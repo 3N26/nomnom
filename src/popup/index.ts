@@ -4,6 +4,35 @@ import { sendToBackground } from '@shared/services/message.service';
 import type { ConfigUpdate } from '@shared/types/config';
 import { createHotKeyInput } from './components/hotkey-input';
 
+/** 应用 i18n 翻译 */
+function applyI18n(): void {
+  // 翻译 textContent
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
+    if (key) {
+      const message = chrome.i18n.getMessage(key);
+      if (message) {
+        el.textContent = message;
+      }
+    }
+  });
+
+  // 翻译 placeholder
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (key) {
+      const message = chrome.i18n.getMessage(key);
+      if (message && el instanceof HTMLInputElement) {
+        el.placeholder = message;
+      }
+    }
+  });
+
+  // 设置 html lang 属性
+  const lang = chrome.i18n.getUILanguage();
+  document.documentElement.lang = lang;
+}
+
 /** 防抖函数 */
 function debounce<T extends (...args: unknown[]) => void>(fn: T, delay: number): T {
   let timer: number | undefined;
@@ -61,4 +90,7 @@ async function initForm(): Promise<void> {
 }
 
 // 启动
-document.addEventListener('DOMContentLoaded', initForm);
+document.addEventListener('DOMContentLoaded', () => {
+  applyI18n();
+  initForm();
+});

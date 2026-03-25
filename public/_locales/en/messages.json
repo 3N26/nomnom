@@ -1,0 +1,35 @@
+{
+  "extName": {
+    "message": "NomNom"
+  },
+  "extDescription": {
+    "message": "Nom nom nom... all your links"
+  },
+  "popupTitle": {
+    "message": "NomNom Settings"
+  },
+  "tabPoolCount": {
+    "message": "Tab Pool Count"
+  },
+  "tabPoolCountDesc": {
+    "message": "Number of tabs to open at once"
+  },
+  "nextTabShortcut": {
+    "message": "Next Tab Shortcut"
+  },
+  "nextTabShortcutDesc": {
+    "message": "Press keys or click to set shortcut"
+  },
+  "hotkeyPlaceholder": {
+    "message": "Click to record..."
+  },
+  "hotkeyRecording": {
+    "message": "Recording"
+  },
+  "limitOpenLinks": {
+    "message": "Limit Open Links"
+  },
+  "limitOpenLinksDesc": {
+    "message": "Maximum links to open (0 = no limit)"
+  }
+}

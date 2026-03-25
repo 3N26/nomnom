@@ -4,9 +4,10 @@ import { resolve } from 'path';
 
 const manifest = {
   manifest_version: 3,
-  name: 'NomNom',
-  version: '0.1.0',
-  description: 'Nom nom nom... all your links',
+  name: '__MSG_extName__',
+  version: '0.0.2',
+  description: '__MSG_extDescription__',
+  default_locale: 'en',
   icons: {
     16: 'icons/icon-16.png',
     32: 'icons/icon-32.png',
