@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="NomNom" width="128">
+</p>
+
 # NomNom
 
 English | [简体中文](README.md)
@@ -5,6 +9,8 @@ English | [简体中文](README.md)
 A Chrome browser extension that collects and batch-opens links like a hamster. Nom nom nom... all your links.
 
 > **Why "NomNom"?**: NomNom is an onomatopoeia for the sound of eating, often used to describe small animals (especially hamsters) munching away. This extension works like a diligent hamster, helping you "gobble up" links from web pages and stash them in tab groups to digest at your own pace.
+
+![NomNom Demo](preview.gif)
 
 ## Features
 
@@ -16,31 +22,12 @@ A Chrome browser extension that collects and batch-opens links like a hamster. N
 
 ## Installation
 
-### From Source
-
-1. Clone the project and install dependencies:
-   ```bash
-   git clone <repo-url>
-   cd nomnom
-   npm install
-   ```
-
-2. Build the project:
-   ```bash
-   npm run build
-   ```
-
-3. Load the extension:
-   - Open Chrome and go to `chrome://extensions/`
-   - Enable "Developer mode" in the top right corner
-   - Click "Load unpacked"
-   - Select the `dist` directory
-
-### Development Mode (Hot Reload)
-
-```bash
-npm run dev
-```
+1. Download the latest `nomnom.zip` from [Releases](../../releases)
+2. Extract to any directory
+3. Open Chrome and go to `chrome://extensions/`
+4. Enable "Developer mode" in the top right corner
+5. Click "Load unpacked"
+6. Select the extracted directory
 
 ## Usage
 
@@ -102,7 +89,20 @@ nomnom/
 - **Runtime**: Chrome Extension Manifest V3
 - **APIs**: Chrome Tabs, Tab Groups, History, Storage, Context Menus
 
-## Development Commands
+## Development
+
+### Build from Source
+
+```bash
+git clone https://github.com/3N26/nomnom.git
+cd nomnom
+npm install
+npm run build
+```
+
+After building, load the `dist` directory in `chrome://extensions/`.
+
+### Commands
 
 | Command | Description |
 |---------|-------------|

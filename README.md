@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="NomNom" width="128">
+</p>
+
 # NomNom
 
 [English](README.en.md) | 简体中文
@@ -5,6 +9,8 @@
 一个 Chrome 浏览器扩展，像仓鼠一样收集和批量打开链接。Nom nom nom... all your links.
 
 > **名字由来**：NomNom 源自英语中模拟吃东西的拟声词，常用于形容小动物（尤其是仓鼠）快速咀嚼食物的声音。这个扩展就像一只勤劳的仓鼠，帮你把网页上的链接一个个"吃掉"，囤进标签组里慢慢消化。
+
+![NomNom 演示](preview.gif)
 
 ## 功能特性
 
@@ -16,31 +22,12 @@
 
 ## 安装
 
-### 开发模式
-
-1. 克隆项目并安装依赖：
-   ```bash
-   git clone <repo-url>
-   cd nomnom
-   npm install
-   ```
-
-2. 构建项目：
-   ```bash
-   npm run build
-   ```
-
-3. 加载扩展：
-   - 打开 Chrome，进入 `chrome://extensions/`
-   - 开启右上角的「开发者模式」
-   - 点击「加载已解压的扩展程序」
-   - 选择 `dist` 目录
-
-### 开发模式（热更新）
-
-```bash
-npm run dev
-```
+1. 从 [Releases](../../releases) 下载最新的 `nomnom.zip`
+2. 解压到任意目录
+3. 打开 Chrome，进入 `chrome://extensions/`
+4. 开启右上角的「开发者模式」
+5. 点击「加载已解压的扩展程序」
+6. 选择解压后的目录
 
 ## 使用方法
 
@@ -102,7 +89,20 @@ nomnom/
 - **运行时**: Chrome Extension Manifest V3
 - **API**: Chrome Tabs, Tab Groups, History, Storage, Context Menus
 
-## 开发命令
+## 开发
+
+### 从源码构建
+
+```bash
+git clone https://github.com/3N26/nomnom.git
+cd nomnom
+npm install
+npm run build
+```
+
+构建完成后，在 `chrome://extensions/` 加载 `dist` 目录即可。
+
+### 开发命令
 
 | 命令 | 说明 |
 |------|------|
